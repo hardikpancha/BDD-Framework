@@ -1,0 +1,124 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate PHPTravels Home Page Test",
+        "description": "",
+        "id": "phptravels-application-test;validate-phptravels-home-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7772138459,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens a browser",
+            "match": {
+              "location": "HomePageSteps.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71551245,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1257760346,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs into app",
+            "match": {
+              "location": "HomePageSteps.user_logs_into_app()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11912365,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate home page title",
+            "match": {
+              "location": "HomePageSteps.validate_home_page_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2801000532,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate logged in username",
+            "match": {
+              "location": "HomePageSteps.validate_logged_in_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1334451317,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "check Hotels link",
+            "match": {
+              "location": "HomePageSteps.check_Hotels_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1472407981,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "check Flights link",
+            "match": {
+              "location": "HomePageSteps.check_Flights_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 146857719,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "#\tThen change currency to INR"
+              }
+            ],
+            "line": 13,
+            "name": "close the browser",
+            "match": {
+              "location": "HomePageSteps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "PHPTravels Application Test",
+    "description": "",
+    "id": "phptravels-application-test",
+    "keyword": "Feature",
+    "uri": "/Users/SUMUKH/eclipse_workspace/cucumberPOM/src/main/java/com/qa/feature/phpTravels.feature"
+  }
+]

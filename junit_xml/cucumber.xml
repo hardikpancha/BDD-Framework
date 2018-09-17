@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.86808">
+<testcase classname="PHPTravels Application Test" name="Validate PHPTravels Home Page Test" time="14.86808">
+<system-out><![CDATA[Given user opens a browser..................................................passed
+Then user is on login page..................................................passed
+Then user logs into app.....................................................passed
+Then validate home page title...............................................passed
+Then validate logged in username............................................passed
+Then check Hotels link......................................................passed
+Then check Flights link.....................................................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
