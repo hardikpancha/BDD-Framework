@@ -11,48 +11,49 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//h3[@class='RTL']")
 	WebElement userNameLable;
-	
+
 	@FindBy(xpath = "//ul[@class='nav navbar-nav']//a[@title='Hotels']")
 	WebElement HOTELS_link;
-	
+
 	@FindBy(xpath = "//ul[@class='nav navbar-nav']//a[@title='Flights']")
 	WebElement FLIGHTS_link;
-	
+
 	@FindBy(xpath = "//li[@class = 'dropdown open']//a[@class='dropdown-toggle go-text-right' and @data-toggle = 'dropdown']")
 	WebElement currency_change;
-	
+
 	@FindBy(xpath = "//a[@onclick = 'change_currency(this)' and @data-code = '18']")
 	WebElement changeToINR;
-	
-	//Initializing the Page Objects:
+
+	// Initializing the Page Objects:
 	public HomePage() {
-		
+
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public String verifyHomePageTitle() {
 		return driver.getTitle();
 	}
-	
+
 	public boolean verifyCorrectUserName() {
-		
+
 		return userNameLable.isDisplayed();
 	}
-	
+
 	public void clickOnHotelsLink() {
-		
-		 HOTELS_link.click();
+
+		HOTELS_link.click();
 	}
+
 	public void clickOnFlightsLink() {
-		
-		 FLIGHTS_link.click();
+
+		FLIGHTS_link.click();
 	}
+
 	public void changeCurrency() {
-		
+
 		Actions action = new Actions(driver);
 		action.moveToElement(currency_change).build().perform();
 		changeToINR.click();
-		
-		
+
 	}
 }

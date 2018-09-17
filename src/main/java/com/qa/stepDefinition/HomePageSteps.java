@@ -44,36 +44,30 @@ public class HomePageSteps extends TestBase {
 
 	@And("^validate logged in username$")
 	public void validate_logged_in_username() {
-		
+
 		boolean flag = homePage.verifyCorrectUserName();
 		Assert.assertTrue(flag);
 
 	}
-	
+
 	@Then("^check Hotels link$")
 	public void check_Hotels_link() {
-		
+
 		homePage.clickOnHotelsLink();
-	    
+
 	}
 
 	@Then("^check Flights link$")
 	public void check_Flights_link() {
-	   
+
 		homePage.clickOnFlightsLink();
 	}
 
-//	@And("^change currency to INR$")
-//	public void change_currency_to_INR() {
-//	   
-//		homePage.changeCurrency();
-//	}
 	@And("^close the browser$")
 	public void close_the_browser() {
-		
-		driver.quit();
-		
-	}
 
+		driver.quit();
+
+	}
 
 }

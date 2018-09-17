@@ -50,16 +50,16 @@ public class LoginPage extends TestBase {
 	}
 
 	public HomePage login(String un, String pwd) {
-		
+
 		MyAccount.click();
 		Login.click();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		//LoginBtn.click();
+		// LoginBtn.click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", LoginBtn);
-		
+
 		return new HomePage();
 	}
 

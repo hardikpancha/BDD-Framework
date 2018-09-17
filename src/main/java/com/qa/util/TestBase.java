@@ -17,7 +17,8 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("/Users/SUMUKH/eclipse_workspace/cucumberPOM/src/main/java/com/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream(
+					"/Users/SUMUKH/eclipse_workspace/cucumberPOM/src/main/java/com/qa/config/config.properties");
 			prop.load(ip);
 		} catch (IOException e) {
 			e.getMessage();
@@ -41,8 +42,6 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
 		driver.get(prop.getProperty("url"));
-		
-		
 
 	}
 
